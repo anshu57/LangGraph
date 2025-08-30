@@ -1,0 +1,43 @@
+What is Gen AI ?
+Gen AI refers to a class of Artificial Intelligence models that can create new content - such as text, images, audio, code,
+or Video - that resembles human - created data.
+
+
+
+LLMs based apps like ChatGpt
+
+Diffusion models for images
+
+Code generating LLMs like CodeLLama
+TTS models like ElevenLabs
+
+Video gen models like Sora
+
+
+
+Gen AI VS Traditional AI :
+
+Traditional AI is about finding patterns in data and giving predictions.
+
+Gen AI is about learning the distribution of data so that it can generate a new sample from it.
+The best part of Gen AI is that it can mimic humans
+
+Application Areas:
+
+Creative and Business Writing
+Software Development
+Customer Support
+Education
+Designing
+
+
+Goal - To hire a backend engineer!
+ creating a JD
+ Posting the JD to a job platform
+ Shortlisting
+ Interviewing
+ Rolling an offer letter
+ Onboarding
+
+ 
+
