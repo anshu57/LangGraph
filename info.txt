@@ -1,6 +1,7 @@
 What is Gen AI ?
-Gen AI refers to a class of Artificial Intelligence models that can create new content - such as text, images, audio, code,
-or Video - that resembles human - created data.
+Gen AI refers to a class of Artificial Intelligence models that can create 
+new content - such as text, images, audio, code,or Video - that 
+resembles human - created data.
 
 
 
@@ -19,7 +20,8 @@ Gen AI VS Traditional AI :
 
 Traditional AI is about finding patterns in data and giving predictions.
 
-Gen AI is about learning the distribution of data so that it can generate a new sample from it.
+Gen AI is about learning the distribution of data so that it can generate a 
+new sample from it.
 The best part of Gen AI is that it can mimic humans
 
 Application Areas:
@@ -41,3 +43,58 @@ Goal - To hire a backend engineer!
 
  
 
+ What is Agentic AI?
+ Agentic Ai is a type of AI that take up a task or goal from a user and then work toward 
+ completing it on its own, with minimal human guidance.
+ It plans, takes action, adapts to changes, and seeks help only when necessary.
+
+
+Agentic AI Characteristics -
+  Autonomous
+  Goal Oriented
+  Planning
+  Reasoning
+  Adaptability
+  Context Awareness
+
+
+Autonomy : it refers to AI system's ability to make decisions and take 
+actions on its own to achieve goal, without needing step-by-step human instructions.
+
+Goal Oriented : AI system operates with a persistent objective in mind and continuosly
+directs its actions to achieve that objective, rather than just responding to 
+isolated prompts.
+
+Planning : Planning is the agent's ability to break down high-level goal into structured sequence of
+actions or subgoals and decide the best path to achieve the desired outcome.
+
+Reasoning : it is the cognitive process through which an Agentic ai system interprets
+information, draws conclusions, and makes decisions - both while planning ahead and while executing
+actions in real time.
+
+Adaptibility : it is the agent's ability to modify its plans, strategies, or actions in response
+to unexpected conditions - all while staying aligned with goal.
+
+Context Awareness : it is the agent's ability to understand, retain, and utilize relevant information
+from the ongoing task, past interactions, user prefences, and environmental cues to make
+better decisions throughout a multi-step process.
+
+
+Components of Agentic system
+ Brain - Generally LLM
+ Orchestrator - LangGraph
+ Tools - 
+ Memory - 
+ Supervisor - HITL
+
+
+
+LangChain VS LangGraph
+
+- LangChain do not have nested worlflows
+- LangChain do not have Human in loop
+- LangChain do not have event based pause, LangChain has to add Glue code.
+- LangGraph is fault Tolerant
+
+LangGraph is an Orchestration framework that enables you to build 
+stateful, multi-step and event-driven workflows using LLMs 
