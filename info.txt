@@ -97,4 +97,59 @@ LangChain VS LangGraph
 - LangGraph is fault Tolerant
 
 LangGraph is an Orchestration framework that enables you to build 
-stateful, multi-step and event-driven workflows using LLMs 
+stateful, multi-step and event-driven workflows using LLM workflows.
+it enables advanced features like parallelism, loops, branching, memory, and 
+resumability - making it ideal for agentic and production-grade AI applications.
+it models your logic as a graph of nodes(tasks) and edges(routing) instead of a linear
+chain.
+
+
+1. LLM workflows:
+  I. these are step by step process using which we can build complex LLM applications.
+  II. Each step in a workflow performs a distinct task - such as prompting, Reasoning,
+  tool calling, memory access, or decision-making.
+  III. Workflows can be linear, parallel, branched, or looped, allowing for complex behaviurs
+  like retries, multi-agent communication, or tool-augmented reasoning.
+  IV. Common workflows:
+  - Prompt chaining 
+  - routing
+  - Parallelization
+  - Orchestrator Workers workflow
+  
+
+2. Graphs, Nodes and Edges:
+  Graph is overall structure and flow of an agent's operations. it is 
+  stateful entity, i.e. it maintains a shared state that is passed
+  between nodes and updated as the computation progresses.
+   
+  Nodes are the fundamental building blocks within a LangGraph. 
+  Each node encapsulates a specific piece of logic or a computational step. 
+  This can be anything from simple data processing functions, interactions 
+  with external APIs, or calls to Large Language Models (LLMs). 
+  Nodes receive the current graph state as input, perform their designated task, 
+  and can return an updated state.
+  
+  Edges define the connections and flow of execution between nodes in a graph. 
+  They dictate which node will be executed next based on the current state. 
+  LangGraph supports two main types of edges:
+    Fixed Edges: These establish a direct, unconditional transition from one node to another.
+    Conditional Edges: These allow for dynamic routing, where the next node to execute 
+    depends on the current state is determined by a function that evaluates the 
+    current state and returns the name of the appropriate next node.
+    This enables complex decision-making and branching within the agent's workflow.
+
+
+3. State:
+   It represents a shared data structure that captures the current snapshot of your application
+   at any given moment during the execution of a graph.
+
+
+4. Reducers:
+   These are functions that define how updates from nodes are applied to shared state of the graph.
+   Each key in the state can have its own Reducer, which determines whether new data replaces,
+   merges, or adds to the existing value.
+
+   
+
+   
+   
