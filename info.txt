@@ -153,3 +153,11 @@ chain.
 
    
    
+What is Persistence
+
+Persistence in LangGraph refers to the ability to save and restore the state
+of a workflow over time.
+
+it makes langGraph fault Tolerant.
+persistence is implemented using checkpoints.
+
