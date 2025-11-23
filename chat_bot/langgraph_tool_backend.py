@@ -23,8 +23,10 @@ model = ChatHuggingFace(llm=llm)
 
 
 # Tools
+# search tool
 search_tool = DuckDuckGoSearchRun(region="us-en")
 
+# Calculator tool
 @tool
 def calculator(first_num: float, second_num: float, operation: str) -> dict:
     """
@@ -47,6 +49,7 @@ def calculator(first_num: float, second_num: float, operation: str) -> dict:
     else:
         return {"error": "Invalid operation"}  
 
+# stock price tool
 @tool
 def get_stock_price(symbol: str) -> dict:
     """
