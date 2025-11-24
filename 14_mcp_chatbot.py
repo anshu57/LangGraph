@@ -21,10 +21,13 @@ client = MultiServerMCPClient(
             "transport": "stdio",
             "command": "python3",
             "args": ["/Users/anshugangwar/Desktop/mcp-math-server/main.py"]
+        },
+        "expense": {
+            "transport": "streamable_http",
+            "url": "https://grateful-olive-takin.fastmcp.app/mcp"
         }
     }
 )
-
 
 
 # state
@@ -64,8 +67,7 @@ async def main():
     chatbot = await build_graph()
 
     # runnig graph
-    result = await chatbot.ainvoke({"messages": [HumanMessage(content="find the modulus of 132354 and 23 and " \
-    "give answer like a cricket commentator")]})
+    result = await chatbot.ainvoke({"messages": [HumanMessage(content="List all my expenses from 1st November to 30 November 2025")]})
 
     print(result['messages'][-1].content)
 
