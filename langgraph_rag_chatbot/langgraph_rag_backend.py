@@ -33,7 +33,7 @@ _THREAD_RETRIEVERS: Dict[str, Any] = {}
 _THREAD_METADATA: Dict[str, dict] = {}
 
 def _get_retriever(thread_id: Optional[str]):
-    """Fetch the retriever for athreas if available."""
+    """Fetch the retriever for threads if available."""
     if thread_id and thread_id in _THREAD_RETRIEVERS:
         return _THREAD_RETRIEVERS[thread_id]
     return None
